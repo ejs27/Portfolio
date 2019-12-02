@@ -1,0 +1,63 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+/* * {
+	box-sizing: border-box;
+} */
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+
+
+/* ---- Layout Containers ---- */
+
+
+.profile{
+    width:10em;
+    border-radius:50%;
+    border: 2px gray solid;
+}
+
+.header{
+    text-align: center;
+    background-color: royalblue;
+}
+
+.header h1,
+.header p{
+    margin: 0;
+}
+
+.header li{
+    list-style: none;
+    margin: auto;
+    border: black 1px solid;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    
+}
+.wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/* ---- Page Elements ---- */
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
