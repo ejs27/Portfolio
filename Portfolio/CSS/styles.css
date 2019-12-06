@@ -9,8 +9,12 @@
 
 body {
 	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	color: #3a3a3a;
+  line-height: 1.6;
+  background-color: darkslategray;
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 60vh minmax(500px, 1fr) auto;
 }
 
 h2 {
@@ -19,67 +23,66 @@ h2 {
   font-style: thin;
 }
 
+
+/* add image to the header. 
+   cover 60% of the screen with image */
+header{
+  padding-top: 32px;
+  text-align: center;
+  background-image: url("https://tinyurl.com/vtnsq2b");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 60vh;
+  /* margin-top: 75px; */
+  font-family: "Raleway", sans-serif;
+}
+
+header h1{
+  padding-top: 70px;
+  font-weight: lighter;
+}
+
+footer{
+  margin-top: auto;
+  display: block;
+  background-color: lightgray;
+  color: black;
+}
+
 /* ---- Layout Containers ---- */
 .navbar{
   display: flex;
   justify-content: space-between;
   padding: 10px 16px;
-  background: rgb(0, 140, 255);
+  background: linear-gradient(rgb(0, 53, 97), rgba(0, 140, 255, 0) ) ;
   color: black;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  /* box-shadow: 0 1px 4px rgba(0,0,0,0.4); */
 }
 
 #logo img{
+  margin-top: 1vh;
+  margin-left: 2vh;
   height: 3em;
 }
 
-
-/* add image to the header. 
-   cover 60% of the screen with image */
-.header{
-    padding-top: 32px;
-    text-align: center;
-    background-image: url("../img/background.jpg");
-    background-position: center;
-    background-size: cover;
-    color: black;
-    height: 60vh;
-    margin-top: 75px;
-    font-family: "Raleway", sans-serif;
-}
-
-.profile{
-    width:10em;
-    border-radius:50%;
-    border: 2px gray solid;
-    margin-top: 3em; /* 48px */
-}
-
-/* .navbar a:link,
-.navbar a:visited{
-  display: block;
-  color: white;
-  font-weight: 200;
-  text-decoration: none;
-} */
 .navbar ul{
   list-style: none;
   /* margin-left: auto; */
 }
 
-
-.container{
-    width: 90%;
-    margin: 0 auto;
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* ---- dropdown menu ---- */
 
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: transparent;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -115,9 +118,9 @@ h2 {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
+/* .dropdown:hover .dropbtn {
   background-color: #3e8e41;
-}
+} */
 
 
 /* ---- Page Elements ---- */
@@ -133,6 +136,12 @@ h2 {
 ==================================== */
 
 @media (min-width: 769px) {
+
+  #logo img{
+    margin-left: 3vh;
+    height: 4em;
+  }
+
   .dropbtn
   {
     display:none;
@@ -153,6 +162,28 @@ h2 {
 
   .dropdown-content a:hover, a:link {
   background-color: initial;
+  }
+
+  body{
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 60vh minmax(150px, auto) minmax(1px, auto);
+  }
+
+  header{
+    grid-column: 1 / -1;
+  }
+  
+  main{
+    grid-column: 1 / 2;
+  }
+  
+  aside{
+    grid-column: 2 / -1;
+    
+  }
+
+  footer{
+    grid-column: 1 / -1;
   }
 }
 

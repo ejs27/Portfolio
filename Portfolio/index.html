@@ -10,10 +10,8 @@
     </head>
 
     <body>
-
-
         <!-- Header -->
-        <header class="header">
+        <header>
             <nav class="navbar" >
                 <p id=logo><a href="#"><img src="img/logo_1.png" alt="logo"></a></p>
                 <div class="dropdown">
@@ -27,50 +25,64 @@
                     </div>
                 </div>
             </nav>
-            <img class="profile" src="img/profile_1.jpg" alt="profile pic">
+            <!-- profile... consider java script cool design -->
             <h1>Elliot J. Shin</h1>
             <p>Materials Engineer</p>
 
 
         </header>
-        <div class="container">
-            <article id="about">
-                <h2>About Me</h2>
-                <p>Hello, it is an honor to have you spend your valuable time to learn about me. I am a materials engineer looking to contribute to software development. </p>
-                <p>I love problem solving in various fields of technology. Since studying computer science at University of Wisconsin as a minor, I've always enjoyed approaching complex problems at different angles to figure out the optimal solution. </p>
-                <p></p>
-            </article>
-            <div id="background">
-                <h2>Background</h2>
-                <h3><span class="work">SAF Engineering</span></h3>
+        <!-- main content -->
+        <main> 
+            <div class="wrapper">
+                <article id="about">
+                    <h2>About Me</h2>
+                    <p>Hello, it is an honor to have you spend your valuable time to learn about me. I am a materials engineer looking to contribute to software development. </p>
+                    <p>I love problem solving in various fields of technology. Since studying computer science at University of Wisconsin as a minor, I've always enjoyed approaching complex problems at different angles to figure out the optimal solution. </p>
+                    <p></p>
+                </article>
+                <div id="background">
+                    <h2>Background</h2>
+                    <h3><span class="work">SAF Engineering</span></h3>
+                        <ul>
+                            <li>Investigated and provided reports of over 50 cases of fatigue fracture of aluminum and titanium fighter jet structure parts</li>
+                            <li>Analyzed and provided resolution for recurring manufacturing defect</li>
+                            <li>Created test procedures for non-ferrous material development per ASTM spec</li>
+                        </ul>
+                    <h3><span class="work">Woodward, Inc.</span></h3>
                     <ul>
-                        <li>Investigated and provided reports of over 50 cases of fatigue fracture of aluminum and titanium fighter jet structure parts</li>
-                        <li>Analyzed and provided resolution for recurring manufacturing defect</li>
-                        <li>Created test procedures for non-ferrous material development per ASTM spec</li>
+                        <li>Investigated over 100 cases of fracture/failure of various aircraft parts with SEM, EDS, FTIR, 3D optical profiler, optical microscopy, and metallography to determine root cause of failure on returned field unit</li>
+                        <li>Developed methods for failure analyses to maximize the efficiency of analytic tests</li>
+                        <li>Conducted analytic tests such as intergranular attack, corrosion failure, microstructure evaluation and macro/micro hardness tests of various metals, aluminum anodize and hard coat, diamond like coating, and nitride coating evaluations</li>
+                        <li>Audited suppliers and internal processes to evaluate the compliance to company/industrial specification and provided written reports to maintain NADCAP accreditation</li>
+                        <li>Collaborated with coworkers to develop and implement work instructions and operating procedures to address standard lab testing and nonconformance</li>
+                        <li>Trained lab personnel to perform day to day testing for aluminum production lines</li>
+                        <li>Lead over 100 conformance tests for aluminum surface treatment to follow ASTM and MIL spec</li>
                     </ul>
-                <h3><span class="work">Woodward, Inc.</span></h3>
-                <ul>
-                    <li>Investigated over 100 cases of fracture/failure of various aircraft parts with SEM, EDS, FTIR, 3D optical profiler, optical microscopy, and metallography to determine root cause of failure on returned field unit</li>
-                    <li>Developed methods for failure analyses to maximize the efficiency of analytic tests</li>
-                    <li>Conducted analytic tests such as intergranular attack, corrosion failure, microstructure evaluation and macro/micro hardness tests of various metals, aluminum anodize and hard coat, diamond like coating, and nitride coating evaluations</li>
-                    <li>Audited suppliers and internal processes to evaluate the compliance to company/industrial specification and provided written reports to maintain NADCAP accreditation</li>
-                    <li>Collaborated with coworkers to develop and implement work instructions and operating procedures to address standard lab testing and nonconformance</li>
-                    <li>Trained lab personnel to perform day to day testing for aluminum production lines</li>
-                    <li>Lead over 100 conformance tests for aluminum surface treatment to follow ASTM and MIL spec</li>
-                </ul>
-            
-                <h2>Projects</h2>
+                
+                    <h2>Projects</h2>
+                </div>
             </div>
-            <aside>Skills</aside>
-        </div>
-    </body>
-    <footer id="subfooter">
-        <div class="container">
+        </main>
+        <!-- aside. skills, contact info. -->
+        <aside class="sidebar">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python</li>
+                <li>C#.Net</li>
+                <li>Ruby</li>
+                <li>PHP</li>
+            </ul>
+        </aside>
+        <!-- footer -->
+        <footer id="subfooter">
             <div class="row">
                 <p><strong>&copy;Elliot Shin</strong> ALL RIGHTS RESERVED.</p>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </body>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
